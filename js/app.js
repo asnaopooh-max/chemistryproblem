@@ -73,7 +73,7 @@ function getSelectedCategories() {
 
 function handleCategoryChange() {
   updateFilterStatus();
-  if (quizStarted) {
+  if (questions.length > 0) {
     const selectedCategories = getSelectedCategories();
     QuizEngine.setCategoryFilter(selectedCategories);
     renderStats();
@@ -100,6 +100,7 @@ function loadQuestionData() {
     .then((loaded) => {
       questions = loaded;
       QuizEngine.createQuizSession(questions);
+      QuizEngine.setCategoryFilter(getSelectedCategories());
       renderStats();
       clearError();
     })
@@ -182,6 +183,10 @@ function handleResetSession() {
   quizStarted = false;
   questionIndex = 0;
   QuizEngine.resetSession();
+  DOM.categoryFilters.querySelectorAll("input[type=checkbox]").forEach((input) => {
+    input.checked = true;
+  });
+  updateFilterStatus();
   DOM.quizPanel.hidden = true;
   DOM.resultPanel.hidden = true;
   DOM.submitAnswerButton.disabled = false;

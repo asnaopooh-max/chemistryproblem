@@ -231,6 +231,10 @@ button[type="button"]:disabled {
   line-height: 0;
 }
 
+.chem {
+  white-space: nowrap;
+}
+
 .chem sub {
   font-size: 0.72em;
   vertical-align: -0.28em;
@@ -310,6 +314,7 @@ button[type="button"]:disabled {
   background: #f8fafc;
   cursor: pointer;
   line-height: 1.45;
+  overflow: hidden;
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
@@ -325,8 +330,17 @@ button[type="button"]:disabled {
   pointer-events: none;
 }
 
-.choice-label span {
+.choice-label > span {
   display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+
+.choice-label .chem {
+  display: inline;
+  white-space: nowrap;
 }
 
 .choice-selected {

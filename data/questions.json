@@ -2721,5 +2721,200 @@
     "explanation": "Zn は Zn2+ となって電子を失い酸化される。Cu2+ は電子を受け取って Cu となるので還元される。",
     "point": "金属単体と金属イオンの反応は、酸化還元として整理できる。",
     "id": "CB-148"
+  },
+  {
+    "category": "物質の構成",
+    "unit": "物質の分類",
+    "topic": "粒子モデル",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の粒子モデルが表す物質として最も適切なのはどれか。",
+    "choices": [
+      "単体",
+      "化合物",
+      "混合物",
+      "同位体",
+      "イオン"
+    ],
+    "answerIndex": 2,
+    "explanation": "図では丸と四角の2種類の粒子が混ざっている。複数の物質が混ざった状態なので混合物と判断できる。",
+    "point": "粒子モデルでは、粒子の種類と混ざり方に注目する。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>粒子モデル</p><svg viewBox='0 0 640 360' role='img' aria-label='2種類の粒子が混ざったモデル'><rect x='90' y='60' width='460' height='240' fill='#f8fafc' stroke='#334155' stroke-width='3'/><circle cx='170' cy='130' r='18' fill='#60a5fa'/><circle cx='250' cy='180' r='18' fill='#60a5fa'/><circle cx='340' cy='120' r='18' fill='#60a5fa'/><circle cx='470' cy='210' r='18' fill='#60a5fa'/><rect x='210' y='105' width='34' height='34' fill='#f97316'/><rect x='405' y='155' width='34' height='34' fill='#f97316'/><rect x='300' y='230' width='34' height='34' fill='#f97316'/><text class='svg-small' x='226' y='332'>丸と四角は異なる粒子を表す</text></svg></div>",
+    "id": "CB-149"
+  },
+  {
+    "category": "原子の構造と周期表",
+    "unit": "原子の構造",
+    "topic": "同位体",
+    "difficulty": 3,
+    "skill": "判断",
+    "question": "陽子数8、中性子数8の原子Aと、陽子数8、中性子数10の原子Bについて最も適切な説明はどれか。",
+    "choices": [
+      "AとBは異なる元素である",
+      "AとBは質量数が同じである",
+      "Aだけがイオンである",
+      "Bだけが電子をもたない",
+      "AとBは同位体である"
+    ],
+    "answerIndex": 4,
+    "explanation": "元素は陽子数で決まる。AもBも陽子数が8なので同じ元素であり、中性子数が異なるため同位体である。",
+    "point": "同位体では、陽子数は同じで中性子数が異なる。",
+    "id": "CB-150"
+  },
+  {
+    "category": "化学結合",
+    "unit": "イオン結晶",
+    "topic": "電気伝導性",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図をもとに、イオン結晶が水溶液で電気を通しやすい理由として最も適切なのはどれか。",
+    "choices": [
+      "電子が原子核に固定されるから",
+      "水が必ず分解するから",
+      "結晶が気体になるから",
+      "イオンが水溶液中で動けるから",
+      "分子がすべて中性になるから"
+    ],
+    "answerIndex": 3,
+    "explanation": "イオン結晶は固体ではイオンが動きにくいが、水溶液中では陽イオンと陰イオンが動けるため電気を通しやすい。",
+    "point": "電気を通すには、電荷をもつ粒子が移動できる必要がある。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>イオン結晶の電気伝導</p><svg viewBox='0 0 640 360' role='img' aria-label='固体と水溶液でのイオンの動き'><rect x='70' y='80' width='220' height='200' fill='#f8fafc' stroke='#334155' stroke-width='3'/><rect x='350' y='80' width='220' height='200' fill='#ecfeff' stroke='#0f766e' stroke-width='3'/><text class='svg-label' x='130' y='65'>固体</text><text class='svg-label' x='420' y='65'>水溶液</text><circle cx='130' cy='140' r='18' fill='#60a5fa'/><circle cx='190' cy='140' r='18' fill='#f97316'/><circle cx='130' cy='200' r='18' fill='#f97316'/><circle cx='190' cy='200' r='18' fill='#60a5fa'/><circle cx='420' cy='135' r='18' fill='#60a5fa'/><circle cx='500' cy='205' r='18' fill='#f97316'/><path d='M420 135 L455 110' stroke='#2563eb' stroke-width='3'/><path d='M500 205 L535 235' stroke='#c2410c' stroke-width='3'/><text class='svg-small' x='105' y='310'>イオンが動きにくい</text><text class='svg-small' x='402' y='310'>イオンが動ける</text></svg></div>",
+    "id": "CB-151"
+  },
+  {
+    "category": "物質量と濃度",
+    "unit": "物質量",
+    "topic": "気体の体積",
+    "difficulty": 3,
+    "skill": "計算",
+    "question": "標準状態で 0.75 mol の気体の体積は何 L か。ただし 1.0 mol = 22.4 L とする。",
+    "choices": [
+      "22.4 L",
+      "33.6 L",
+      "5.6 L",
+      "11.2 L",
+      "16.8 L"
+    ],
+    "answerIndex": 4,
+    "explanation": "標準状態では気体1.0 molが22.4 Lなので、0.75 molでは 22.4×0.75=16.8 L である。",
+    "point": "気体の体積は物質量に比例する。",
+    "id": "CB-152"
+  },
+  {
+    "category": "化学反応式と量的関係",
+    "unit": "係数合わせ",
+    "topic": "燃焼反応",
+    "difficulty": 3,
+    "skill": "判断",
+    "question": "エタン C2H6 の完全燃焼を表す式として、係数が正しくそろっているものはどれか。",
+    "choices": [
+      "2C2H6 + 7O2 → 2CO2 + 6H2O",
+      "2C2H6 + 7O2 → 4CO2 + 6H2O",
+      "C2H6 + O2 → CO2 + H2O",
+      "2C2H6 + 5O2 → 4CO2 + 6H2O",
+      "C2H6 + 7O2 → 2CO2 + 3H2O"
+    ],
+    "answerIndex": 1,
+    "explanation": "C、H、O の原子数が左右で等しくなるようにそろえる。2C2H6 + 7O2 → 4CO2 + 6H2O では C が4個、H が12個、O が14個で一致する。",
+    "point": "燃焼反応では、CをCO2に、HをH2OにしてからOをそろえる。",
+    "id": "CB-153"
+  },
+  {
+    "category": "酸と塩基",
+    "unit": "pH",
+    "topic": "pHスケール",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のpHスケールで、pH 4 の水溶液の性質として最も適切なのはどれか。",
+    "choices": [
+      "強い塩基性",
+      "酸性",
+      "中性",
+      "塩基性",
+      "酸化還元性"
+    ],
+    "answerIndex": 1,
+    "explanation": "pHは7が中性で、7より小さいと酸性を示す。図でも pH 4 は酸性側にある。",
+    "point": "pHは値が小さいほど酸性が強く、大きいほど塩基性が強い。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>pHと水溶液の性質</p><svg viewBox='0 0 640 360' role='img' aria-label='pHスケール'><line class='svg-axis' x1='80' y1='180' x2='560' y2='180'/><rect x='80' y='140' width='205' height='45' fill='#fde68a'/><rect x='285' y='140' width='70' height='45' fill='#bbf7d0'/><rect x='355' y='140' width='205' height='45' fill='#bfdbfe'/><text class='svg-label' x='160' y='130'>酸性</text><text class='svg-label' x='302' y='130'>中性</text><text class='svg-label' x='430' y='130'>塩基性</text><text class='svg-small' x='75' y='210'>0</text><text class='svg-small' x='310' y='210'>7</text><text class='svg-small' x='545' y='210'>14</text><circle class='svg-accent' cx='220' cy='162' r='8'/><text class='svg-label' x='225' y='105'>pH 4</text></svg></div>",
+    "id": "CB-154"
+  },
+  {
+    "category": "中和反応",
+    "unit": "中和滴定",
+    "topic": "滴下量",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のビュレットの読みから、この間に滴下した標準液の体積は何 mL か。",
+    "choices": [
+      "10.0 mL",
+      "12.0 mL",
+      "22.0 mL",
+      "34.0 mL",
+      "8.0 mL"
+    ],
+    "answerIndex": 0,
+    "explanation": "ビュレットの読みが 12.0 mL から 22.0 mL になっているので、滴下した体積は 22.0-12.0=10.0 mL である。",
+    "point": "滴定で使った体積は、終わりの読みから始めの読みを引いて求める。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>滴定の読み取り</p><svg viewBox='0 0 640 360' role='img' aria-label='ビュレットの目盛り'><rect x='285' y='50' width='70' height='260' fill='#eff6ff' stroke='#2563eb' stroke-width='3'/><line x1='285' y1='110' x2='355' y2='110' stroke='#334155' stroke-width='2'/><line x1='285' y1='210' x2='355' y2='210' stroke='#334155' stroke-width='2'/><text class='svg-label' x='365' y='116'>12.0 mL</text><text class='svg-label' x='365' y='216'>22.0 mL</text><path d='M286 110 L354 110 L354 210 L286 210 Z' fill='#bfdbfe' opacity='0.65'/><text class='svg-small' x='225' y='342'>滴下量は 22.0 - 12.0</text></svg></div>",
+    "id": "CB-155"
+  },
+  {
+    "category": "酸化還元",
+    "unit": "酸化数",
+    "topic": "電子の授受",
+    "difficulty": 3,
+    "skill": "理解",
+    "question": "Zn → Zn2+ + 2e- の変化について正しい説明はどれか。",
+    "choices": [
+      "Znは中和されている",
+      "Znの酸化数は減少している",
+      "電子を受け取っている",
+      "Znは酸化されている",
+      "Znは還元されている"
+    ],
+    "answerIndex": 3,
+    "explanation": "Zn は電子を2個失って Zn2+ になっている。電子を失う変化は酸化であり、酸化数は 0 から +2 に増加する。",
+    "point": "電子を失うと酸化、電子を受け取ると還元である。",
+    "id": "CB-156"
+  },
+  {
+    "category": "実験・グラフ・読解問題",
+    "unit": "グラフ解析",
+    "topic": "加熱曲線",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の加熱曲線で、温度が一定になっている区間で主に起こっている変化はどれか。",
+    "choices": [
+      "酸化還元反応",
+      "電離",
+      "状態変化",
+      "中和反応",
+      "沈殿生成"
+    ],
+    "answerIndex": 2,
+    "explanation": "加熱しているのに温度が一定の区間では、加えた熱が状態変化に使われている。液体の沸騰などが考えられる。",
+    "point": "加熱曲線では、傾きがある区間と水平な区間の意味を区別する。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>加熱曲線</p><svg viewBox='0 0 640 360' role='img' aria-label='液体の加熱曲線'><line class='svg-axis' x1='75' y1='300' x2='585' y2='300'/><line class='svg-axis' x1='75' y1='300' x2='75' y2='45'/><path class='svg-line' d='M90 265 L220 150 L390 150 L540 70'/><line class='svg-grid' x1='75' y1='150' x2='585' y2='150'/><text class='svg-label' x='400' y='145'>温度一定</text><text class='svg-small' x='272' y='340'>加熱時間</text><text class='svg-small' x='24' y='38'>温度</text></svg></div>",
+    "id": "CB-157"
+  },
+  {
+    "category": "総合問題",
+    "unit": "総合演習",
+    "topic": "分離と濃度",
+    "difficulty": 4,
+    "skill": "判断",
+    "question": "水100 gに硝酸カリウムを溶かして飽和水溶液を作り、冷却すると結晶が出た。この操作で利用した性質として最も適切なのはどれか。",
+    "choices": [
+      "同位体の質量数が等しい性質",
+      "溶解度が温度で変化する性質",
+      "気体の体積が圧力で変化しない性質",
+      "酸と塩基が必ず中性になる性質",
+      "金属が電気を通さない性質"
+    ],
+    "answerIndex": 1,
+    "explanation": "再結晶では、温度による溶解度の違いを利用する。高温で多く溶かし、冷却して溶けきれなくなった分を結晶として取り出す。",
+    "point": "分離操作は、物質ごとの性質の違いを利用して行う。",
+    "id": "CB-158"
   }
 ]
