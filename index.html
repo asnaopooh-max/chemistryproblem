@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>化学基礎 共通テスト対策</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <h1>化学基礎 共通テスト対策</h1>
+      <p>分野を選んでランダムに問題演習ができます。送信すると正誤判定と解説を表示します。</p>
+    </header>
+
+    <section class="control-panel card">
+      <div class="panel-row">
+        <fieldset>
+          <legend>分野を選択</legend>
+          <div id="category-filters" class="category-grid" aria-label="問題の分野"></div>
+          <div class="filter-actions">
+            <button type="button" id="select-all-categories">全分野に戻す</button>
+          </div>
+        </fieldset>
+      </div>
+      <div class="panel-row actions-row">
+        <button type="button" id="start-quiz">出題開始</button>
+        <button type="button" id="reset-session">リセット</button>
+      </div>
+      <div class="panel-row summary-row" id="filter-status" aria-live="polite"></div>
+    </section>
+
+    <section class="quiz-panel card" id="quiz-panel" hidden>
+      <div class="question-meta">
+        <div><strong id="question-id"></strong></div>
+        <div><span id="question-category" class="label"></span> <span id="question-difficulty" class="label"></span></div>
+      </div>
+      <div class="question-count" id="question-count"></div>
+      <div class="question-text" id="question-text"></div>
+      <div id="question-extra" class="question-extra"></div>
+      <form id="choices-form" class="choices-form" aria-labelledby="question-text"></form>
+      <div class="submit-row">
+        <button type="button" id="submit-answer">送信</button>
+      </div>
+    </section>
+
+    <section class="result-panel card" id="result-panel" aria-live="polite" hidden>
+      <div id="result-message" class="result-message"></div>
+      <div id="result-answer" class="result-answer"></div>
+      <div id="result-explanation" class="result-explanation"></div>
+      <div id="result-point" class="result-point"></div>
+      <div class="submit-row">
+        <button type="button" id="next-question">次の問題</button>
+      </div>
+    </section>
+
+    <section class="stats-panel card" id="stats-panel">
+      <h2>集計</h2>
+      <div class="stats-row">
+        <div>解答数：<span id="stats-attempts">0</span></div>
+        <div>正答数：<span id="stats-correct">0</span></div>
+        <div>正答率：<span id="stats-rate">0%</span></div>
+      </div>
+      <div class="stats-row">
+        <div>出題対象問題数：<span id="stats-available">0</span></div>
+        <div>現在のフィルタ：<span id="stats-active-filters">全分野</span></div>
+      </div>
+    </section>
+
+    <section class="error-panel card hidden" id="error-panel" aria-live="assertive"></section>
+  </main>
+
+  <script src="js/constants.js"></script>
+  <script src="js/questionLoader.js"></script>
+  <script src="js/quizEngine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
