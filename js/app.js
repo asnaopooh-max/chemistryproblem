@@ -24,7 +24,8 @@ const DOM = {
   statsAvailable: document.getElementById("stats-available"),
   statsActiveFilters: document.getElementById("stats-active-filters"),
   errorPanel: document.getElementById("error-panel"),
-  filterStatus: document.getElementById("filter-status")
+  filterStatus: document.getElementById("filter-status"),
+  filterDetails: document.querySelector(".filter-details")
 };
 
 let questions = [];
@@ -129,6 +130,9 @@ function handleStartQuiz() {
     return;
   }
   questionIndex += 1;
+  if (DOM.filterDetails) {
+    DOM.filterDetails.open = false;
+  }
   renderQuestion(nextQuestion);
   renderStats();
   clearError();
@@ -186,6 +190,42 @@ function handleResetSession() {
   clearError();
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function formatChemText(value) {
+  const elementPattern = "H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Fe|Cu|Zn|Br|I";
+  const formulaPattern = new RegExp(
+    `(^|[^A-Za-z0-9])((?:\\d+(?=${elementPattern}))?(?:(?:${elementPattern})\\d*){1,8}(?:\\^?\\d*[+-])?)(?=$|[^A-Za-z0-9])`,
+    "g"
+  );
+  const formulaBodyPattern = new RegExp(`(${elementPattern})(\\d*)`, "g");
+
+  function formatFormulaToken(token) {
+    const coefficientMatch = token.match(new RegExp(`^(\\d+)(?=${elementPattern})`));
+    const coefficient = coefficientMatch ? coefficientMatch[1] : "";
+    const formulaToken = coefficient ? token.slice(coefficient.length) : token;
+    const chargeMatch = formulaToken.match(/(\^?\d*[+-])$/);
+    const charge = chargeMatch ? chargeMatch[1].replace("^", "") : "";
+    const formula = charge ? formulaToken.slice(0, -chargeMatch[1].length) : formulaToken;
+    const formattedFormula = formula.replace(formulaBodyPattern, (_, element, count) => {
+      return count ? `${element}<sub>${count}</sub>` : element;
+    });
+    return `${coefficient}<span class="chem">${formattedFormula}${charge ? `<sup>${charge}</sup>` : ""}</span>`;
+  }
+
+  return escapeHtml(value)
+    .replace(/\^(\d+)([A-Z][a-z]?)/g, "<sup>$1</sup>$2")
+    .replace(/10\^(-?\d+)/g, "10<sup>$1</sup>")
+    .replace(formulaPattern, (_, prefix, token) => `${prefix}${formatFormulaToken(token)}`);
+}
+
 function renderQuestion(question) {
   if (!question) {
     DOM.questionText.textContent = "問題が読み込めません。";
@@ -196,7 +236,7 @@ function renderQuestion(question) {
   DOM.questionCategory.textContent = question.category;
   DOM.questionDifficulty.textContent = QuizConstants.difficultyLabels[question.difficulty] || "";
   DOM.questionCount.textContent = `第 ${questionIndex} 問`; 
-  DOM.questionText.innerHTML = question.question;
+  DOM.questionText.innerHTML = formatChemText(question.question);
   DOM.questionExtra.innerHTML = question.extra || "";
   renderChoices(question);
   DOM.resultPanel.hidden = true;
@@ -211,7 +251,7 @@ function renderChoices(question) {
     label.setAttribute("for", choiceId);
     label.innerHTML = `
       <input class="choice-input" type="radio" name="choice" id="${choiceId}" value="${index}" />
-      <span>${choice}</span>
+      <span>${formatChemText(choice)}</span>
     `;
     DOM.choicesForm.appendChild(label);
     const radio = label.querySelector("input");
@@ -231,9 +271,9 @@ function renderResult(result) {
   DOM.resultPanel.hidden = false;
   DOM.resultMessage.textContent = result.correct ? "正解です！" : "不正解です。";
   DOM.resultMessage.className = `result-message ${result.correct ? "correct" : "incorrect"}`;
-  DOM.resultAnswer.textContent = `正解: ${question.choices[question.answerIndex]}`;
-  DOM.resultExplanation.textContent = `解説: ${result.explanation}`;
-  DOM.resultPoint.textContent = result.point ? `ポイント: ${result.point}` : "";
+  DOM.resultAnswer.innerHTML = `正解: ${formatChemText(question.choices[question.answerIndex])}`;
+  DOM.resultExplanation.innerHTML = `解説: ${formatChemText(result.explanation)}`;
+  DOM.resultPoint.innerHTML = result.point ? `ポイント: ${formatChemText(result.point)}` : "";
 
   DOM.choicesForm.querySelectorAll("label.choice-label").forEach((label, index) => {
     const input = label.querySelector("input");
