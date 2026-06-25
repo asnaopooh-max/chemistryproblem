@@ -4,15 +4,42 @@
 
 ## 追加手順
 
-1. `data/questions.json` を開く。
-2. 末尾に新しい問題オブジェクトを追加する。
-3. `id` は重複しないようにする。
-4. `category` は `js/constants.js` の分野名と一致させる。
-5. `difficulty` は 1〜5 の数値で設定する。
-6. `choices` は 5〜8 個にする。
-7. `answerIndex` は正解選択肢の 0 始まりの添字にする。
-8. `explanation` を必ず記述する。
-9. 必要なら `point` を追加する。
+1. `generate_questions.py` で下書き候補を作る。
+2. `data/question_drafts.json` の内容を確認する。
+3. 採用したい問題だけ `reviewStatus` を `approved` に変更する。
+4. `generate_questions.py --promote data/question_drafts.json` で `data/questions.json` に採用する。
+5. 手動で追加する場合は、末尾に新しい問題オブジェクトを追加する。
+6. `id` は重複しないようにする。
+7. `category` は `js/constants.js` の分野名と一致させる。
+8. `difficulty` は 1〜5 の数値で設定する。
+9. `choices` は 5〜8 個にする。
+10. `answerIndex` は正解選択肢の 0 始まりの添字にする。
+11. `explanation` を必ず記述する。
+12. 必要なら `point` を追加する。
+
+## 下書き生成ワークフロー
+
+`generate_questions.py` は本番の `data/questions.json` を直接増やさず、まず下書きファイルを作るためのツールです。
+実行には Python 3 が必要です。
+
+```powershell
+python generate_questions.py --count 80
+python generate_questions.py --check data/question_drafts.json
+```
+
+採用する問題だけ、下書き内の `reviewStatus` を `approved` に変更します。
+
+```json
+"reviewStatus": "approved"
+```
+
+その後、次のコマンドで採用します。
+
+```powershell
+python generate_questions.py --promote data/question_drafts.json
+```
+
+生成ツールは、似た問題の量産を避けるため、問題ファミリーごとの上限、類似問題文の検出、正解位置の偏り確認、分野・技能の分布確認を行います。
 
 ## 問題作成のポイント
 
@@ -21,6 +48,16 @@
 - 問題文に図や表が必要な場合は `extra` フィールドに簡単な説明やデータを追加できる。
 - 正解の根拠を `explanation` に書き、学習ポイントがあれば `point` に補足する。
 - `choices` の順序は、難易度に応じて簡単な選択肢から配置してもよい。
+
+## 良問化のチェック観点
+
+- 同じ数値差し替え問題を続けすぎない。
+- `知識`、`理解`、`計算`、`判断`、`読解` を混ぜる。
+- 1つの分野だけに偏らせない。
+- 選択肢は、明らかに不自然なものだけで埋めない。
+- 誤答選択肢にも「なぜ間違えやすいか」があるようにする。
+- 解説は正答だけでなく、考え方が残る文章にする。
+- 実験・グラフ問題では、条件、単位、読み取る量を明確にする。
 
 ## 例
 
