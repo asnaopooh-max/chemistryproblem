@@ -22,7 +22,7 @@ const QuizEngine = (function () {
   }
 
   function resetAvailableQuestions() {
-    const filtered = allQuestions.filter((item) => selectedCategories.length === 0 || selectedCategories.includes(item.category));
+    const filtered = allQuestions.filter((item) => selectedCategories.includes(item.category));
     availableQuestions = shuffle(filtered);
   }
 
@@ -31,7 +31,7 @@ const QuizEngine = (function () {
   }
 
   function setCategoryFilter(categories) {
-    selectedCategories = categories.length === 0 ? [...QuizConstants.categories] : [...categories];
+    selectedCategories = [...categories];
     resetAvailableQuestions();
   }
 

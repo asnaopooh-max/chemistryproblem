@@ -2916,5 +2916,396 @@
     "explanation": "再結晶では、温度による溶解度の違いを利用する。高温で多く溶かし、冷却して溶けきれなくなった分を結晶として取り出す。",
     "point": "分離操作は、物質ごとの性質の違いを利用して行う。",
     "id": "CB-158"
+  },
+  {
+    "category": "物質の構成",
+    "unit": "物質の分類",
+    "topic": "粒子モデル",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のA〜Cの粒子モデルについて、混合物だけをすべて選んだものはどれか。ただし、同じ形と色の粒子は同じ種類の粒子を表す。",
+    "choices": [
+      "Aのみ",
+      "Bのみ",
+      "Cのみ",
+      "AとC",
+      "BとC"
+    ],
+    "answerIndex": 1,
+    "explanation": "AとCは1種類の粒子だけでできているため純物質である。Bは丸い粒子と四角い粒子の2種類が混ざっているので混合物である。",
+    "point": "純物質か混合物かは、粒子の種類が1種類か複数種類かで判断できる。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>粒子モデル A〜C</p><svg viewBox='0 0 640 360' role='img' aria-label='3つの粒子モデル'><rect x='55' y='70' width='160' height='210' fill='#f8fafc' stroke='#334155' stroke-width='3'/><rect x='240' y='70' width='160' height='210' fill='#f8fafc' stroke='#334155' stroke-width='3'/><rect x='425' y='70' width='160' height='210' fill='#f8fafc' stroke='#334155' stroke-width='3'/><text class='svg-label' x='125' y='52'>A</text><text class='svg-label' x='310' y='52'>B</text><text class='svg-label' x='495' y='52'>C</text><circle cx='100' cy='130' r='16' fill='#60a5fa'/><circle cx='150' cy='130' r='16' fill='#60a5fa'/><circle cx='100' cy='195' r='16' fill='#60a5fa'/><circle cx='150' cy='195' r='16' fill='#60a5fa'/><circle cx='285' cy='125' r='16' fill='#60a5fa'/><rect x='330' y='110' width='32' height='32' fill='#f97316'/><circle cx='330' cy='205' r='16' fill='#60a5fa'/><rect x='275' y='190' width='32' height='32' fill='#f97316'/><rect x='468' y='110' width='32' height='32' fill='#f97316'/><rect x='522' y='110' width='32' height='32' fill='#f97316'/><rect x='468' y='190' width='32' height='32' fill='#f97316'/><rect x='522' y='190' width='32' height='32' fill='#f97316'/><text class='svg-small' x='165' y='325'>同じ記号は同じ種類の粒子</text></svg></div>",
+    "id": "CB-159"
+  },
+  {
+    "category": "物質の構成",
+    "unit": "分離と精製",
+    "topic": "分離方法の選択",
+    "difficulty": 3,
+    "skill": "判断",
+    "question": "砂、食塩、水の混合物から食塩だけを取り出したい。操作の順序として最も適切なのはどれか。",
+    "choices": [
+      "ろ過して砂を除き、ろ液を蒸発させる",
+      "蒸留して砂を除き、残った液をろ過する",
+      "昇華させて食塩を取り出し、残りを冷却する",
+      "沈殿を待って上ずみだけを捨てる",
+      "ろ過したあと、ろ紙上の砂を加熱する"
+    ],
+    "answerIndex": 0,
+    "explanation": "砂は水に溶けないので、まずろ過で除ける。食塩はろ液中に溶けているので、水を蒸発させると結晶として取り出せる。",
+    "point": "分離操作は、溶けやすさ、粒子の大きさ、沸点などの違いを利用する。",
+    "id": "CB-160"
+  },
+  {
+    "category": "原子の構造と周期表",
+    "unit": "周期表",
+    "topic": "族と性質",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の周期表の一部で、最も1価の陽イオンになりやすい元素の位置はどれか。",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answerIndex": 0,
+    "explanation": "Aは1族の位置にあり、最外殻電子を1個失って1価の陽イオンになりやすい。Dは17族で1価の陰イオンになりやすく、Eは18族で反応しにくい。",
+    "point": "周期表では、同じ族の元素が似た性質を示す。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>周期表の一部</p><svg viewBox='0 0 640 360' role='img' aria-label='周期表の一部'><rect x='80' y='70' width='70' height='55' fill='#dbeafe' stroke='#334155'/><rect x='150' y='70' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='430' y='70' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='500' y='70' width='70' height='55' fill='#e0f2fe' stroke='#334155'/><rect x='80' y='125' width='70' height='55' fill='#fef3c7' stroke='#334155'/><rect x='150' y='125' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='430' y='125' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='500' y='125' width='70' height='55' fill='#e0f2fe' stroke='#334155'/><rect x='80' y='180' width='70' height='55' fill='#fef3c7' stroke='#334155'/><rect x='150' y='180' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='430' y='180' width='70' height='55' fill='#fff' stroke='#334155'/><rect x='500' y='180' width='70' height='55' fill='#e0f2fe' stroke='#334155'/><text class='svg-label' x='108' y='160'>A</text><text class='svg-label' x='178' y='160'>B</text><text class='svg-label' x='458' y='105'>C</text><text class='svg-label' x='458' y='215'>D</text><text class='svg-label' x='528' y='215'>E</text><text class='svg-small' x='100' y='50'>1族</text><text class='svg-small' x='170' y='50'>2族</text><text class='svg-small' x='448' y='50'>17族</text><text class='svg-small' x='518' y='50'>18族</text><text class='svg-small' x='35' y='105'>2周期</text><text class='svg-small' x='35' y='160'>3周期</text><text class='svg-small' x='35' y='215'>4周期</text></svg></div>",
+    "id": "CB-161"
+  },
+  {
+    "category": "原子の構造と周期表",
+    "unit": "原子の構造",
+    "topic": "電子配置",
+    "difficulty": 3,
+    "skill": "理解",
+    "question": "原子番号17の塩素原子について、電子配置と最外殻電子数の組み合わせとして正しいものはどれか。",
+    "choices": [
+      "2-8-7、最外殻電子数7",
+      "2-8-8、最外殻電子数8",
+      "2-7-8、最外殻電子数8",
+      "2-8-1、最外殻電子数1",
+      "2-2-13、最外殻電子数13"
+    ],
+    "answerIndex": 0,
+    "explanation": "原子番号17の原子は電子を17個もつ。内側から2個、8個、残り7個と入るので電子配置は2-8-7、最外殻電子数は7である。",
+    "point": "原子番号は中性原子の電子数と等しい。",
+    "id": "CB-162"
+  },
+  {
+    "category": "化学結合",
+    "unit": "結合の種類",
+    "topic": "電子の授受",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図はナトリウム原子と塩素原子が結合するときの模式図である。この結合の種類として最も適切なのはどれか。",
+    "choices": [
+      "共有結合",
+      "金属結合",
+      "イオン結合",
+      "水素結合",
+      "配位結合"
+    ],
+    "answerIndex": 2,
+    "explanation": "ナトリウムは電子を1個失ってNa+に、塩素は電子を1個受け取ってCl-になる。陽イオンと陰イオンの静電気的な引力による結合なのでイオン結合である。",
+    "point": "金属元素と非金属元素の間では、電子の授受によるイオン結合を考える。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>電子の移動</p><svg viewBox='0 0 640 360' role='img' aria-label='ナトリウムから塩素への電子移動'><circle cx='160' cy='170' r='55' fill='#fef3c7' stroke='#a16207' stroke-width='3'/><circle cx='480' cy='170' r='55' fill='#dbeafe' stroke='#2563eb' stroke-width='3'/><text class='svg-label' x='142' y='176'>Na</text><text class='svg-label' x='466' y='176'>Cl</text><circle cx='230' cy='135' r='8' fill='#f97316'/><path d='M245 135 C305 85, 375 85, 430 135' fill='none' stroke='#f97316' stroke-width='4' marker-end='url(#arrow163)'/><defs><marker id='arrow163' markerWidth='10' markerHeight='10' refX='8' refY='3' orient='auto'><path d='M0,0 L0,6 L9,3 z' fill='#f97316'/></marker></defs><text class='svg-small' x='270' y='82'>電子1個が移動</text><text class='svg-label' x='135' y='260'>Na+</text><text class='svg-label' x='455' y='260'>Cl-</text></svg></div>",
+    "id": "CB-163"
+  },
+  {
+    "category": "化学結合",
+    "unit": "分子と結晶",
+    "topic": "物質の性質",
+    "difficulty": 3,
+    "skill": "判断",
+    "question": "次の物質のうち、分子からできており、常温で気体として存在しやすいものの組み合わせとして最も適切なのはどれか。",
+    "choices": [
+      "NaCl と Cu",
+      "CO2 と NH3",
+      "MgO と CaO",
+      "Fe と Al",
+      "NaOH と KCl"
+    ],
+    "answerIndex": 1,
+    "explanation": "CO2とNH3はいずれも分子からできており、常温で気体として扱われる代表的な物質である。NaClやMgOはイオン結晶、CuやFeは金属である。",
+    "point": "物質の性質は、構成粒子と結合の種類に強く関係する。",
+    "id": "CB-164"
+  },
+  {
+    "category": "物質量と濃度",
+    "unit": "溶液の濃度",
+    "topic": "希釈",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のように、0.20 mol/Lの塩化ナトリウム水溶液50 mLをメスフラスコに入れ、水を加えて全体を200 mLにした。希釈後の濃度は何 mol/L か。",
+    "choices": [
+      "0.025 mol/L",
+      "0.050 mol/L",
+      "0.10 mol/L",
+      "0.20 mol/L",
+      "0.80 mol/L"
+    ],
+    "answerIndex": 1,
+    "explanation": "溶質の物質量は希釈前後で変わらない。0.20 mol/L × 0.050 L = 0.010 mol。これを0.200 Lにするので、0.010 mol ÷ 0.200 L = 0.050 mol/Lである。",
+    "point": "希釈では C1V1 = C2V2 を使える。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>希釈操作</p><svg viewBox='0 0 640 360' role='img' aria-label='希釈の模式図'><path d='M125 80 L215 80 L195 285 L145 285 Z' fill='#dbeafe' stroke='#2563eb' stroke-width='3'/><path d='M140 205 L200 205 L192 285 L148 285 Z' fill='#93c5fd' opacity='0.75'/><text class='svg-label' x='118' y='55'>0.20 mol/L</text><text class='svg-label' x='145' y='320'>50 mL</text><path d='M270 180 L370 180' stroke='#334155' stroke-width='4' marker-end='url(#arrow165)'/><defs><marker id='arrow165' markerWidth='10' markerHeight='10' refX='8' refY='3' orient='auto'><path d='M0,0 L0,6 L9,3 z' fill='#334155'/></marker></defs><path d='M440 60 L530 60 L515 300 L455 300 Z' fill='#ecfeff' stroke='#0f766e' stroke-width='3'/><path d='M450 105 L520 105 L512 300 L458 300 Z' fill='#67e8f9' opacity='0.55'/><line x1='430' y1='105' x2='540' y2='105' stroke='#0f766e' stroke-width='2' stroke-dasharray='6 6'/><text class='svg-label' x='414' y='42'>水を加えて</text><text class='svg-label' x='440' y='330'>全体 200 mL</text></svg></div>",
+    "id": "CB-165"
+  },
+  {
+    "category": "物質量と濃度",
+    "unit": "質量パーセント濃度",
+    "topic": "濃度計算",
+    "difficulty": 2,
+    "skill": "計算",
+    "question": "食塩8.0 gを水192 gに完全に溶かした。この水溶液の質量パーセント濃度は何%か。",
+    "choices": [
+      "2.0%",
+      "4.0%",
+      "8.0%",
+      "12%",
+      "20%"
+    ],
+    "answerIndex": 1,
+    "explanation": "水溶液全体の質量は 8.0 g + 192 g = 200 g。質量パーセント濃度は 8.0 ÷ 200 × 100 = 4.0% である。",
+    "point": "質量パーセント濃度では、分母は水の質量ではなく水溶液全体の質量である。",
+    "id": "CB-166"
+  },
+  {
+    "category": "化学反応式と量的関係",
+    "unit": "反応量",
+    "topic": "不足する物質",
+    "difficulty": 4,
+    "skill": "判断",
+    "question": "N2 + 3H2 → 2NH3 の反応で、N2を2.0 mol、H2を3.0 mol混合して完全に反応させた。生成するNH3は最大で何 mol か。",
+    "choices": [
+      "1.0 mol",
+      "2.0 mol",
+      "3.0 mol",
+      "4.0 mol",
+      "6.0 mol"
+    ],
+    "answerIndex": 1,
+    "explanation": "H2 3.0 molに対して必要なN2は1.0 molなので、H2が不足する。係数比 H2:NH3 = 3:2 より、NH3は2.0 mol生成する。",
+    "point": "複数の反応物があるときは、先に不足する物質を見つける。",
+    "id": "CB-167"
+  },
+  {
+    "category": "化学反応式と量的関係",
+    "unit": "反応式",
+    "topic": "粒子数と係数",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のようにCO分子4個とO2分子3個を反応させ、2CO + O2 → 2CO2 の反応ができるだけ進むとする。反応後に余るO2分子は何個か。",
+    "choices": [
+      "0個",
+      "1個",
+      "2個",
+      "3個",
+      "4個"
+    ],
+    "answerIndex": 1,
+    "explanation": "CO 2個につきO2 1個が反応する。CO 4個をすべて反応させるにはO2 2個が必要なので、最初に3個あったO2は1個余る。",
+    "point": "反応式の係数は、分子数の比としても読むことができる。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>反応前の粒子数</p><svg viewBox='0 0 640 360' role='img' aria-label='COとO2の粒子モデル'><rect x='75' y='65' width='490' height='230' fill='#f8fafc' stroke='#334155' stroke-width='3'/><text class='svg-label' x='95' y='45'>CO分子 4個</text><g><circle cx='130' cy='130' r='15' fill='#475569'/><circle cx='165' cy='130' r='15' fill='#60a5fa'/><circle cx='235' cy='130' r='15' fill='#475569'/><circle cx='270' cy='130' r='15' fill='#60a5fa'/><circle cx='340' cy='130' r='15' fill='#475569'/><circle cx='375' cy='130' r='15' fill='#60a5fa'/><circle cx='445' cy='130' r='15' fill='#475569'/><circle cx='480' cy='130' r='15' fill='#60a5fa'/></g><text class='svg-label' x='95' y='205'>O2分子 3個</text><g><circle cx='180' cy='245' r='15' fill='#60a5fa'/><circle cx='215' cy='245' r='15' fill='#60a5fa'/><circle cx='300' cy='245' r='15' fill='#60a5fa'/><circle cx='335' cy='245' r='15' fill='#60a5fa'/><circle cx='420' cy='245' r='15' fill='#60a5fa'/><circle cx='455' cy='245' r='15' fill='#60a5fa'/></g><text class='svg-small' x='445' y='330'>黒: C、青: O</text></svg></div>",
+    "id": "CB-168"
+  },
+  {
+    "category": "酸と塩基",
+    "unit": "指示薬",
+    "topic": "変色域",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の指示薬の表をもとに、pH 9の水溶液にフェノールフタレインを加えたときの色として最も適切なのはどれか。",
+    "choices": [
+      "赤色",
+      "黄色",
+      "緑色",
+      "青色",
+      "無色"
+    ],
+    "answerIndex": 0,
+    "explanation": "フェノールフタレインは酸性から中性付近では無色で、塩基性側で赤色を示す。pH 9は塩基性なので赤色になる。",
+    "point": "指示薬は種類によって変色域と色が異なる。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>指示薬と色</p><svg viewBox='0 0 640 360' role='img' aria-label='指示薬の色の表'><rect x='80' y='75' width='480' height='210' fill='#fff' stroke='#334155' stroke-width='3'/><line x1='80' y1='130' x2='560' y2='130' stroke='#334155' stroke-width='2'/><line x1='80' y1='185' x2='560' y2='185' stroke='#cbd5e1' stroke-width='2'/><line x1='80' y1='240' x2='560' y2='240' stroke='#cbd5e1' stroke-width='2'/><line x1='240' y1='75' x2='240' y2='285' stroke='#334155' stroke-width='2'/><line x1='400' y1='75' x2='400' y2='285' stroke='#334155' stroke-width='2'/><text class='svg-label' x='120' y='110'>指示薬</text><text class='svg-label' x='285' y='110'>酸性</text><text class='svg-label' x='442' y='110'>塩基性</text><text class='svg-small' x='105' y='163'>リトマス紙</text><text class='svg-small' x='298' y='163'>赤</text><text class='svg-small' x='458' y='163'>青</text><text class='svg-small' x='105' y='218'>BTB溶液</text><text class='svg-small' x='296' y='218'>黄</text><text class='svg-small' x='458' y='218'>青</text><text class='svg-small' x='98' y='273'>フェノールフタレイン</text><text class='svg-small' x='292' y='273'>無色</text><text class='svg-small' x='452' y='273'>赤</text></svg></div>",
+    "id": "CB-169"
+  },
+  {
+    "category": "酸と塩基",
+    "unit": "pH",
+    "topic": "水素イオン濃度",
+    "difficulty": 3,
+    "skill": "計算",
+    "question": "水素イオン濃度が 1.0×10^-2 mol/L の塩酸のpHはいくつか。ただし、塩酸は完全に電離するものとする。",
+    "choices": [
+      "1",
+      "2",
+      "7",
+      "12",
+      "14"
+    ],
+    "answerIndex": 1,
+    "explanation": "pH = -log[H+] である。[H+] = 1.0×10^-2 mol/L なので、pHは2である。",
+    "point": "10の指数で表された濃度では、指数の符号を変えるとpHを読み取りやすい。",
+    "id": "CB-170"
+  },
+  {
+    "category": "中和反応",
+    "unit": "中和滴定",
+    "topic": "滴定曲線",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の滴定曲線で、等量点に最も近いNaOH水溶液の滴下量は何 mL か。",
+    "choices": [
+      "5.0 mL",
+      "10.0 mL",
+      "20.0 mL",
+      "30.0 mL",
+      "40.0 mL"
+    ],
+    "answerIndex": 2,
+    "explanation": "滴定曲線では、pHが急激に変化する中央付近が等量点に対応する。図ではその位置が20.0 mL付近に示されている。",
+    "point": "等量点は、酸と塩基がちょうど過不足なく反応した点である。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>滴定曲線</p><svg viewBox='0 0 640 360' role='img' aria-label='滴定曲線の読み取り'><line class='svg-axis' x1='70' y1='300' x2='590' y2='300'/><line class='svg-axis' x1='70' y1='300' x2='70' y2='45'/><line class='svg-grid' x1='330' y1='300' x2='330' y2='55'/><line class='svg-grid' x1='70' y1='175' x2='590' y2='175'/><path class='svg-line' d='M90 275 C170 270, 260 260, 310 225 C330 205, 330 145, 350 115 C390 70, 500 62, 560 58'/><circle class='svg-accent' cx='330' cy='175' r='7'/><text class='svg-label' x='345' y='177'>等量点</text><text class='svg-small' x='305' y='326'>20.0</text><text class='svg-small' x='40' y='180'>7</text><text class='svg-small' x='250' y='346'>NaOH水溶液の滴下量 [mL]</text><text class='svg-small' x='37' y='38'>pH</text></svg></div>",
+    "id": "CB-171"
+  },
+  {
+    "category": "中和反応",
+    "unit": "中和計算",
+    "topic": "多価酸",
+    "difficulty": 4,
+    "skill": "計算",
+    "question": "0.050 mol/Lの硫酸H2SO4 20.0 mLをちょうど中和するには、0.10 mol/LのNaOH水溶液が何 mL 必要か。",
+    "choices": [
+      "5.0 mL",
+      "10.0 mL",
+      "20.0 mL",
+      "40.0 mL",
+      "80.0 mL"
+    ],
+    "answerIndex": 2,
+    "explanation": "硫酸は1 molからH+を2 mol出す。H2SO4の物質量は0.050×0.0200=0.0010 molなので、必要なNaOHは0.0020 mol。0.10 mol/LのNaOHでは0.0020÷0.10=0.020 L、つまり20.0 mLである。",
+    "point": "中和では、酸・塩基の価数を考えてH+とOH-の物質量をそろえる。",
+    "id": "CB-172"
+  },
+  {
+    "category": "酸化還元",
+    "unit": "金属の反応性",
+    "topic": "金属の置換反応",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図の実験結果から、鉄Feと銅Cuの反応性の大小として最も適切なのはどれか。",
+    "choices": [
+      "Feの方がCuより反応性が大きい",
+      "Cuの方がFeより反応性が大きい",
+      "FeとCuの反応性は等しい",
+      "どちらも水素より反応性が小さい",
+      "この実験からは電子の移動は判断できない"
+    ],
+    "answerIndex": 0,
+    "explanation": "鉄板を硫酸銅水溶液に入れると銅が析出するので、FeがCu2+に電子を渡し、Cuを単体にしている。Feの方がCuより反応性が大きいと判断できる。",
+    "point": "反応性の大きい金属は、反応性の小さい金属のイオンを単体に戻すことがある。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>金属板を水溶液に入れた結果</p><svg viewBox='0 0 640 360' role='img' aria-label='金属の置換反応の実験結果'><rect x='80' y='75' width='480' height='210' fill='#fff' stroke='#334155' stroke-width='3'/><line x1='80' y1='130' x2='560' y2='130' stroke='#334155' stroke-width='2'/><line x1='80' y1='205' x2='560' y2='205' stroke='#cbd5e1' stroke-width='2'/><line x1='240' y1='75' x2='240' y2='285' stroke='#334155' stroke-width='2'/><line x1='400' y1='75' x2='400' y2='285' stroke='#334155' stroke-width='2'/><text class='svg-label' x='118' y='110'>金属板</text><text class='svg-label' x='270' y='110'>CuSO4水溶液</text><text class='svg-label' x='430' y='110'>FeSO4水溶液</text><text class='svg-small' x='140' y='172'>Fe</text><text class='svg-small' x='270' y='172'>銅が析出</text><text class='svg-small' x='435' y='172'>変化なし</text><text class='svg-small' x='140' y='247'>Cu</text><text class='svg-small' x='275' y='247'>変化なし</text><text class='svg-small' x='435' y='247'>変化なし</text></svg></div>",
+    "id": "CB-173"
+  },
+  {
+    "category": "酸化還元",
+    "unit": "酸化数",
+    "topic": "酸化数の決定",
+    "difficulty": 3,
+    "skill": "計算",
+    "question": "二酸化硫黄SO2における硫黄Sの酸化数はいくつか。ただし、酸素Oの酸化数は-2とする。",
+    "choices": [
+      "-4",
+      "-2",
+      "0",
+      "+2",
+      "+4"
+    ],
+    "answerIndex": 4,
+    "explanation": "SO2全体は電荷をもたない。酸素2個の酸化数の合計は -2×2 = -4 なので、硫黄の酸化数は +4 で全体が0になる。",
+    "point": "化合物全体の酸化数の和は、電荷がなければ0になる。",
+    "id": "CB-174"
+  },
+  {
+    "category": "実験・グラフ・読解問題",
+    "unit": "実験操作",
+    "topic": "ペーパークロマトグラフィー",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図のペーパークロマトグラフィーで、標準物質Pと同じ高さにスポットをもつ試料はどれか。",
+    "choices": [
+      "試料Xのみ",
+      "試料Yのみ",
+      "試料Zのみ",
+      "試料XとZ",
+      "試料YとZ"
+    ],
+    "answerIndex": 3,
+    "explanation": "同じ条件で同じ高さまで移動したスポットは、同じ物質である可能性が高い。図では標準物質Pのスポットと同じ高さに、試料Xと試料Zのスポットがある。",
+    "point": "クロマトグラフィーでは、スポットの高さや移動距離を比較して成分を推定する。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>ペーパークロマトグラフィー</p><svg viewBox='0 0 640 360' role='img' aria-label='クロマトグラフィーの結果'><rect x='100' y='55' width='440' height='255' fill='#fff7ed' stroke='#334155' stroke-width='3'/><line x1='100' y1='275' x2='540' y2='275' stroke='#334155' stroke-width='2'/><line x1='100' y1='95' x2='540' y2='95' stroke='#60a5fa' stroke-width='2' stroke-dasharray='6 6'/><text class='svg-small' x='420' y='88'>溶媒の到達線</text><circle cx='150' cy='145' r='11' fill='#f97316'/><circle cx='230' cy='145' r='11' fill='#f97316'/><circle cx='230' cy='205' r='10' fill='#60a5fa'/><circle cx='310' cy='205' r='10' fill='#60a5fa'/><circle cx='390' cy='145' r='11' fill='#f97316'/><circle cx='390' cy='235' r='10' fill='#22c55e'/><circle cx='470' cy='235' r='10' fill='#22c55e'/><text class='svg-label' x='142' y='330'>P</text><text class='svg-label' x='222' y='330'>X</text><text class='svg-label' x='302' y='330'>Y</text><text class='svg-label' x='382' y='330'>Z</text><text class='svg-label' x='458' y='330'>Q</text></svg></div>",
+    "id": "CB-175"
+  },
+  {
+    "category": "実験・グラフ・読解問題",
+    "unit": "グラフ解析",
+    "topic": "温度変化",
+    "difficulty": 3,
+    "skill": "読解",
+    "question": "図はある反応を行ったときの水溶液の温度変化である。この反応について最も適切にいえることはどれか。",
+    "choices": [
+      "反応にともなって熱を吸収した",
+      "反応にともなって熱を発生した",
+      "温度はまったく変化しなかった",
+      "水溶液が凝固した",
+      "中和点を過ぎると必ず酸性になった"
+    ],
+    "answerIndex": 1,
+    "explanation": "反応開始後に温度が上昇しているので、反応にともなって熱が発生したと判断できる。発熱反応の温度変化を読み取る問題である。",
+    "point": "温度が上がる反応は発熱反応、温度が下がる反応は吸熱反応と判断する。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>反応中の温度変化</p><svg viewBox='0 0 640 360' role='img' aria-label='温度変化のグラフ'><line class='svg-axis' x1='75' y1='300' x2='585' y2='300'/><line class='svg-axis' x1='75' y1='300' x2='75' y2='45'/><line class='svg-grid' x1='75' y1='225' x2='585' y2='225'/><line class='svg-grid' x1='75' y1='150' x2='585' y2='150'/><path class='svg-line' d='M95 250 C175 230, 245 165, 330 125 C430 90, 520 102, 565 125'/><circle class='svg-accent' cx='330' cy='125' r='7'/><text class='svg-label' x='340' y='120'>最高温度</text><text class='svg-small' x='270' y='340'>時間</text><text class='svg-small' x='25' y='38'>温度</text><text class='svg-small' x='90' y='322'>反応開始</text></svg></div>",
+    "id": "CB-176"
+  },
+  {
+    "category": "総合問題",
+    "unit": "総合演習",
+    "topic": "気体の発生と確認",
+    "difficulty": 4,
+    "skill": "判断",
+    "question": "図の実験で、石灰石に塩酸を加えると気体Xが発生し、石灰水が白くにごった。気体Xとして最も適切なのはどれか。",
+    "choices": [
+      "水素",
+      "酸素",
+      "窒素",
+      "二酸化炭素",
+      "アンモニア"
+    ],
+    "answerIndex": 3,
+    "explanation": "石灰石の主成分は炭酸カルシウムで、塩酸と反応して二酸化炭素を発生する。二酸化炭素は石灰水を白くにごらせる。",
+    "point": "気体の発生源と確認方法を組み合わせて判断する。",
+    "extra": "<div class='diagram-card'><p class='diagram-title'>気体の発生と確認</p><svg viewBox='0 0 640 360' role='img' aria-label='二酸化炭素の発生と確認実験'><path d='M95 160 L220 160 L195 300 L120 300 Z' fill='#fee2e2' stroke='#b91c1c' stroke-width='3'/><ellipse cx='157' cy='160' rx='63' ry='14' fill='#fecaca' stroke='#b91c1c' stroke-width='3'/><circle cx='140' cy='250' r='9' fill='#94a3b8'/><circle cx='170' cy='235' r='8' fill='#94a3b8'/><text class='svg-small' x='112' y='325'>石灰石＋塩酸</text><path d='M220 170 C300 120, 390 120, 455 170' fill='none' stroke='#64748b' stroke-width='8' stroke-linecap='round'/><path d='M455 170 L455 235' stroke='#64748b' stroke-width='8' stroke-linecap='round'/><path d='M420 235 L520 235 L500 310 L440 310 Z' fill='#e0f2fe' stroke='#0f766e' stroke-width='3'/><ellipse cx='470' cy='235' rx='50' ry='12' fill='#cffafe' stroke='#0f766e' stroke-width='3'/><path d='M435 270 C455 258, 480 282, 505 268' stroke='#ffffff' stroke-width='9' opacity='0.9'/><text class='svg-label' x='292' y='110'>気体X</text><text class='svg-small' x='442' y='330'>石灰水</text><text class='svg-small' x='430' y='215'>白くにごる</text></svg></div>",
+    "id": "CB-177"
+  },
+  {
+    "category": "総合問題",
+    "unit": "総合演習",
+    "topic": "濃度と反応量",
+    "difficulty": 4,
+    "skill": "計算",
+    "question": "0.10 mol/Lの塩酸100 mLに、十分な量のマグネシウムを加えた。反応 Mg + 2HCl → MgCl2 + H2 により、標準状態で発生するH2は最大で何 L か。ただし、標準状態で1 molの気体は22.4 Lとする。",
+    "choices": [
+      "0.112 L",
+      "0.224 L",
+      "0.448 L",
+      "1.12 L",
+      "2.24 L"
+    ],
+    "answerIndex": 0,
+    "explanation": "HClの物質量は0.10×0.100=0.010 mol。反応式より HCl:H2 = 2:1 なので、H2は0.0050 mol発生する。体積は0.0050×22.4=0.112 Lである。",
+    "point": "濃度から物質量を求め、反応式の係数比で気体の物質量へ変換する。",
+    "id": "CB-178"
   }
 ]

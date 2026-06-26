@@ -115,6 +115,9 @@ legend {
 }
 
 .filter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   margin-top: 8px;
 }
 
@@ -159,6 +162,10 @@ button[type="button"]:disabled {
   opacity: 0.6;
   cursor: default;
   transform: none;
+}
+
+.secondary-button[type="button"] {
+  background: #64748b;
 }
 
 .actions-row {
@@ -534,6 +541,10 @@ button[type="button"]:disabled {
 
   button[type="button"] {
     width: 100%;
+  }
+
+  .filter-actions {
+    grid-template-columns: 1fr;
   }
 
   .submit-row {

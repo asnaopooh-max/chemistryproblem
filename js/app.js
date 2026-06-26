@@ -1,6 +1,7 @@
 const DOM = {
   categoryFilters: document.getElementById("category-filters"),
   selectAllCategoriesButton: document.getElementById("select-all-categories"),
+  clearAllCategoriesButton: document.getElementById("clear-all-categories"),
   startQuizButton: document.getElementById("start-quiz"),
   resetSessionButton: document.getElementById("reset-session"),
   quizPanel: document.getElementById("quiz-panel"),
@@ -40,6 +41,7 @@ function init() {
 
 function addEventListeners() {
   DOM.selectAllCategoriesButton.addEventListener("click", handleSelectAllCategories);
+  DOM.clearAllCategoriesButton.addEventListener("click", handleClearAllCategories);
   DOM.startQuizButton.addEventListener("click", handleStartQuiz);
   DOM.resetSessionButton.addEventListener("click", handleResetSession);
   DOM.submitAnswerButton.addEventListener("click", handleSubmitAnswer);
@@ -88,11 +90,26 @@ function handleSelectAllCategories() {
   handleCategoryChange();
 }
 
+function handleClearAllCategories() {
+  const inputs = DOM.categoryFilters.querySelectorAll("input[type=checkbox]");
+  inputs.forEach((input) => {
+    input.checked = false;
+  });
+  handleCategoryChange();
+}
+
 function updateFilterStatus() {
   const selected = getSelectedCategories();
-  const label = selected.length === QuizConstants.categories.length || selected.length === 0 ? "全分野" : selected.join("、");
+  const label = getCategoryFilterLabel(selected);
   DOM.statsActiveFilters.textContent = label;
   DOM.filterStatus.textContent = `選択中の分野: ${label}`;
+}
+
+function getCategoryFilterLabel(selected) {
+  if (selected.length === 0) {
+    return "未選択";
+  }
+  return selected.length === QuizConstants.categories.length ? "全分野" : selected.join("、");
 }
 
 function loadQuestionData() {
@@ -300,7 +317,7 @@ function renderStats() {
   DOM.statsRate.textContent = `${stats.rate}%`;
   DOM.statsAvailable.textContent = stats.availableCount;
   const selected = getSelectedCategories();
-  DOM.statsActiveFilters.textContent = selected.length === 0 || selected.length === QuizConstants.categories.length ? "全分野" : selected.join("、");
+  DOM.statsActiveFilters.textContent = getCategoryFilterLabel(selected);
 }
 
 function showError(message) {
