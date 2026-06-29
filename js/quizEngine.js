@@ -14,6 +14,16 @@ const QuizEngine = (function () {
     return copy;
   }
 
+  function shuffleChoices(question) {
+    const originalAnswer = question.choices[question.answerIndex];
+    const shuffledChoices = shuffle(question.choices);
+    return {
+      ...question,
+      choices: shuffledChoices,
+      answerIndex: shuffledChoices.indexOf(originalAnswer)
+    };
+  }
+
   function createQuizSession(questions) {
     allQuestions = [...questions];
     selectedCategories = [...QuizConstants.categories];
@@ -47,7 +57,7 @@ const QuizEngine = (function () {
       currentQuestion = null;
       return null;
     }
-    currentQuestion = availableQuestions.shift();
+    currentQuestion = shuffleChoices(availableQuestions.shift());
     return currentQuestion;
   }
 
